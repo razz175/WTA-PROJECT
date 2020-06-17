@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.invalid input:required:invalid {
+    background: #BE4C54;
+}
+
+
+/* Mark valid inputs during .invalid state */
+
+.invalid input:required:valid {
+    background: #17D654;
+}
+
+.container {
+    margin: ;
+    0px 20px;
+    padding: 0px 20px;
+}
+
+#searchBar {
+    padding-top: 45px;
+    height: 20px;
+}
+
+#search {
+    position: center;
+}
+
+.searchgap {
+    margin-right: 200px !important;
+}
+
+.fixed {
+    width: 100%;
+    top: 0;
+    z-index: inherit;
+}
