@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="p3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+
+    <style>
+        .bgimg {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('hero-bg.jpg');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            width: 100%;
+            height: 981px;
+        }
+        
+        .nac {
+            padding-top: 852px !important;
+        }
+        
+        .headerset {
+            padding-top: 400px;
+            box-sizing: border-box;
+        }
+        
+        .headerset h2 {
+            font-size: 300%;
+        }
+        
+        .headerset h1 {
+            font-size: 400%;
+            font-weight: bold;
+        }
+        /*...........................service....................*/
+        
+        .ourservices {
+            padding: 100px 0px 60px;
+            height: 700px;
+        }
+        
+        .ourservices h1 {
+            font-size: 300%;
+            font-weight: bold;
+        }
+        
+        .rowsetting {
+            margin: 80px 0px !important;
+        }
+        
+        .imgsetting {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        
+        .fa-building {
+            margin-top: 25px;
+            margin-left: 5px;
+        }
+        
+        .rowsetting h2 {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        .rowsetting p {
+            padding: 10px;
+            color: #6c757d;
+        }
+        /*...........................portfolio....................*/
+        
+        .portfolio {
+            height: 1100px;
+            width: 100%;
+            padding: 100px 0px 50px;
+        }
+        
+        .portfolio h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        
+        .card {
+            margin-top: 40px;
+        }
+        /*...........................ourteam....................*/
+        
+        .ourteam {
+            height: 700px;
+            padding: 100px 0px 60px;
+            width: 100%;
+        }
+        
+        .ourteam h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        
+        .teamsetting {
+            margin-top: 70px;
+        }
+        /*...........................footer....................*/
+        
+        .footer {
+            height: 50px;
+        }
+        
+        .footer h6 {
+            line-height: 50px;
+        }
+        /*...........................Responsive....................*/
+        
+        @media(min-width: 992px) {}
+        
+        @media(min-width: 768px) and (max-width: 991px) {
+            .headerset {
+                padding-top: 400px;
+                box-sizing: border-box;
+            }
+            .portfolio {
+                height: 940px;
+                width: 100%;
+                padding: 100px 0px 50px;
+            }
+            .ourteam {
+                height: 890px;
+                padding: 100px 0px 60px;
+                width: 100%;
+            }
+        }
+        
+        @media(min-width: 575px) and (max-width: 767px) {
+            .headerset {
+                padding-top: 500px;
+                box-sizing: border-box;
+            }
+            .headerset h2 {
+                font-size: 220%;
+            }
+            .headerset h1 {
+                font-size: 250%;
+                font-weight: bold;
+            }
+            .portfolio {
+                height: 3350px;
+                width: 100%;
+                padding: 100px 0px 50px;
+            }
+            .ourteam {
+                height: 940px;
+                padding: 100px 0px 60px;
+                width: 100%;
+            }
+        }
+        
+        @media(min-width: 480px) and (max-width: 574px) {
+            .headerset {
+                padding-top: 500px;
+                box-sizing: border-box;
+            }
+            .headerset h2 {
+                font-size: 200%;
+            }
+            .headerset h1 {
+                font-size: 250%;
+                font-weight: bold;
+            }
+            .ourservices {
+                padding: 100px 0px 60px;
+                height: 1050px;
+            }
+            .portfolio {
+                height: 3020px;
+                width: 100%;
+                padding: 100px 0px 50px;
+            }
+            .ourteam {
+                height: 890px;
+                padding: 100px 0px 60px;
+                width: 100%;
+            }
+        }
+        
+        @media(max-width: 479px) {
+            .headerset {
+                padding-top: 500px;
+                box-sizing: border-box;
+            }
+            .headerset h2 {
+                font-size: 200%;
+            }
+            .headerset h1 {
+                font-size: 250%;
+                font-weight: bold;
+            }
+            .ourservices {
+                padding: 100px 0px 60px;
+                height: 1100px;
+            }
+            .portfolio {
+                height: 2720px;
+                width: 100%;
+                padding: 100px 0px 50px;
+            }
+            .ourteam {
+                height: 960px;
+                padding: 100px 0px 60px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bgimg">
+
+        <nav class="navbar navbar-expand-md nav-dark animate__animated animate__slideInDown fixed-top" style="background-color: transparent;">
+
+            <div class="container">
+                <a href="#" class="navbar-brand text-warning font-weight-bold" title="">
+					IMPERIALS</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+					<span cla ss="navbar-toggler-icon"></span>
+				</button>
+
+                <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+
+                    <ul class="navbar-nav ml-auto text-white">
+
+                        <li class="nav-item">
+                            <a href="/" class="nav-link text-white active" title="">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/property1" class="nav-link text-white" title="">PROPERTY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/rent" class="nav-link text-white" title="">RENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/villa" class="nav-link text-white" title="">VILLA</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="" class="nav-link text-danger" data-target="#myModalsignup" data-toggle="modal" title="">LOGIN</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="/login" class="nav-link text-white" title="">LOGIN</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal" id="mymodalsignup">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h3 class="text-center text-primary">SignUp</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Name: </label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Email: </label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone: </label>
+                                <input type="number" name="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Username: </label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Password: </label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password: </label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button type="" class="btn btn-danger" data-dismiss="modal">SignUp</button></br>
+                        <p>Already Have An Account? <a data-target="#mymodallogin" data-toggle="modal" data-dismiss="modal" href="#mymodallogin">login </a>Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal" id="mymodallogin">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h3 class="text-center text-primary">LogIn</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Username: </label>
+                                <input type="text" name="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Password: </label>
+                                <input type="password" name="" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button type="" class="btn btn-danger" data-dismiss="modal">SignUp</button></br>
+                        <p>Don't Have An Account? <a data-target="#mymodalsignup" data-toggle="modal" data-dismiss="modal" href="#mymodalsignup">Signup</a>Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container text-center text-white headerset">
+
+            <h2>Welcome To IMPERIALS</h2>
+            <h1>IT,S NICE TO MEET YOU</h1>
+            <button class="btn btn-warning text-white btn-lg" data-target="#mymodallogin" data-toggle="modal" data-dismiss="modal" href="#mymodallogin" type="">CONTACT </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ....................SERVICE.......................-->
+
+    <section class="container ourservices text-center">
+
+        <h1 id="localServe">SERVICES</h1>
+        <p> Lorem fiuwf winodnowe naxonewd</p>
+
+        <div class="row rowsetting">
+
+            <div class="col-10 col-sm-4 d-block m-auto">
+                <div class="imgsetting d-block m-auto bg-warning"><i class="fa fa-building fa-3x text-white" aria-hidden="true"></i>
+                </div>
+                <h2>Properties</h2>
+                <p>lfbcwb wi hfpwhpifwpifw wihf piwhefp fwpef hwepfh ewpfw wiehfpwe fhewcbwof <a href="property1.html" title="">more...</a></p>
+            </div>
+
+            <div class="col-10 col-sm-4 d-block m-auto">
+                <div class="imgsetting d-block m-auto bg-warning"><i class="fa fa-building fa-3x text-white" aria-hidden="true"></i>
+                </div>
+                <h2>Rents</h2>
+                <p>lfbcwb wi hfpwhpifwpifw wihf piwhefp fwpef hwepfh ewpfw wiehfpwe fhewcbwof <a href="rent.html" title="">more...</a></p>
+            </div>
+
+            <div class="col-10 col-sm-4 d-block m-auto">
+                <div class="imgsetting d-block m-auto bg-warning"><i class="fa fa-building fa-3x text-white" aria-hidden="true"></i>
+                </div>
+                <h2>Villas</h2>
+                <p>lfbcwb wi hfpwhpifwpifw wihf piwhefp fwpef hwepfh ewpfw wiehfpwe fhewcbwof <a href="villa.html" title="">more...</a></p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ....................PORTOFOLIO.......................-->
+
+    <section class="portfolio bg-light">
+
+        <div class="container text-center">
+
+            <h1>PORTFOLIO</h1>
+            <p>lnfobdo efiqh oef qohoqf bofqbo qowdoqg diqwdd wqhog</p>
+            <div class="row">
+
+                <div class="col-10 col-sm-12 col-md-4 m-auto d-block">
+                    <div class="card">
+                        <img src="pr10.jpg" class="card-img img-fluid" alt="">
+                        <div class="card-body">
+                            <h2>Threads</h2>
+                            <p>Illustration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-12 col-md-4 m-auto d-block">
+                    <div class="card">
+                        <img src="pr10.jpg" class="card-img img-fluid" alt="">
+                        <div class="card-body">
+                            <h2>Threads</h2>
+                            <p>Illustration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-12 col-md-4 m-auto d-block">
+                    <div class="card">
+                        <img src="pr10.jpg" class="card-img img-fluid" alt="">
+                        <div class="card-body">
+                            <h2>Threads</h2>
+                            <p>Illustration</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-10 col-sm-12 col-md-4 m-auto d-block">
+                    <div class="card">
+                        <img src="pr10.jpg" class="card-img img-fluid" alt="">
+                        <div class="card-body">
+                            <h2>Threads</h2>
+                            <p>Illustration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-12 col-md-4 m-auto d-block">
+                    <div class="card">
+                        <img src="pr10.jpg" class="card-img img-fluid" alt="">
+                        <div class="card-body">
+                            <h2>Threads</h2>
+                            <p>Illustration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-12 col-md-4 m-auto d-block">
+                    <div class="card">
+                        <img src="pr10.jpg" class="card-img img-fluid" alt="">
+                        <div class="card-body">
+                            <h2>Threads</h2>
+                            <p>Illustration</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ....................OURTEAM.......................-->
+
+    <section class="ourteam">
+
+        <div class="container text-center">
+            <h1>OUR AMAZING TEAM</h1>
+            <p>laidi dgdgow dgw w9gs9w g9gso wszlbs </p>
+
+            <div class="row teamsetting">
+                <div class="col-12 col-sm-10 col-md-6 d-block m-auto">
+                    <figure class="figure">
+                        <img src="ap1.jpg" class="figure-img img-fluid rounded-circle" height="250px" width="250px" alt="">
+                        <figcaption>
+                            ,
+                            <h4>explanatory caption</h4>
+                            <p>ndpendnp</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-10 col-lg-4 d-block m-auto">
+                    <figure class="figure">
+                        <img src="ap2.jpg" class="figure-img img-fluid rounded-circle" height="250px" width="250px" alt="">
+                        <figcaption>
+                            <h4>explanatory caption</h4>
+                            <p>181IT136</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ....................FOOTER.......................-->
+    <footer class="footer">
+        <h6 class="text-center"> Copyright &copy; 2018, Design by RajTech </h6>
+    </footer>
+</body>
